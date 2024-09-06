@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Coffee Shop Questionnaire</title>
+        <link rel="stylesheet" type="text/css" href="../Styles/styles.css">
+    </head>
+    <body>
+        
+<header class="center"><u>Coffee Shop Questionnaire</u></header>
+
+
+        <p>1) what products do you sell?</p>
+        <Table width="500px">
+
+            <tr>
+            <td><input type="radio" name="products" id="hot_drinks" value="hot_drinks">
+            <label for="hot_drinks">Hot Drinks</label><br></td>
+            <td><input type="radio" name="products" id="biscuits" value="biscuits">
+            <label for="biscuits">Biscuits</label><br></td>
+            <td><input type="radio" name="products" id="paninis_wraps" value="paninis_wraps">
+            <label for="paninis_wraps">Paninis / Wraps</label><br></td>
+            </tr><br>
+            <tr>
+            <td><input type="radio" name="products" id="cold_drinks" value="cold_drinks">
+            <label for="cold_drinks">Cold Drinks</label><br></td>
+            <td><input type="radio" name="products" id="cake" value="cake">
+            <label for="cakes">Cakes</label><br></td>
+            <td><input type="radio" name="products" id="salads" value="salads">
+            <label for="salads">Salads</label><br></td>
+            </tr><br>
+            <tr>
+            <td><input type="radio" name="products" id="sandwiches" value="sandwiches">
+            <label for="sandwiches">Sandwiches</label><br></td>
+            <td><input type="radio" name="products" id="hot_food" value="hot_food">
+            <label for="hot_food">Hot Food</label><br></td>
+            <td><input type="radio" name="products" id="other" value="">
+            <label for="other">Other</label><input type="text" name="products"/><br>
+            </tr>
+            </td>
+        </Table>
+
+        <p>2) Do you offer a take-out service</p>
+        <input type="radio" name="take-out" id="take-out-y" value="yes">
+        <label for="take-out-y">yes</label>
+        <input type="radio" name="take-out" id="take-out-n" value="no">
+        <label for="take-out-y">no</label>    
+
+        <p>3) Do you offer WiFi?</p>
+        <input type="radio" name="wifi" id="wifi-y" value="yes">
+        <label for="wifi-y">yes</label>
+        <input type="radio" name="take-out" id="wifi-n" value="no">
+        <label for="wifi-n">no</label>
+
+        <p>4) Who would you say is your target audience?</p>
+        <Table width="500px">
+            <tr>
+            <td><input type="radio" name="audience" id="students" value="students">
+            <label for="students">Students</label><br></td>
+            <td><input type="radio" name="audience" id="children" value="children">
+            <label for="children">Children</label><br></td>
+            <td><input type="radio" name="audience" id="business_persons" value="business_persons">
+            <label for="business_persons">Business Persons</label><br></td>
+            </tr><br>
+            <tr>
+            <td><input type="radio" name="audience" id="families" value="families">
+            <label for="families">Families</label><br></td>
+            <td><input type="radio" name="audience" id="OAPS" value="OAPS">
+            <label for="OAPS">OAP'S</label><br></td>
+            <td><input type="radio" name="audience" id="skilled_labours" value="skilled_labours">
+            <label for="skilled_labours">Skilled Labours</label><br></td>
+            </tr><br>
+            <tr>
+            <td><input type="radio" name="audience" id="parents" value="parents">
+            <label for="parents">Parents</label><br></td>
+            <td><input type="radio" name="audience" id="tourist" value="tourist">
+            <label for="tourist">Tourist</label><br></td>
+            <td><input type="radio" name="audience" id="other" value="">
+            <label for="other">Other</label><input type="text" name="products"/><br>
+            </tr>
+            </td>
+        </Table>
+
+        <p>5) Targeted age group?</p>
+
+        <input type="radio" name="take-out" id="take-out-y" value="yes">
+        <label for="take-out-y">yes</label>
+        <input type="radio" name="take-out" id="take-out-n" value="no">
+        <label for="take-out-y">no</label>    
+
+        <p>3) Do you offer WiFi?</p>
+        <input type="radio" name="wifi" id="wifi-y" value="yes">
+        <label for="wifi-y">yes</label>
+        <input type="radio" name="take-out" id="wifi-n" value="no">
+        <label for="wifi-n">no</label>
+
+        <p>4) Who would you say is your target audience?</p>
+        <Table width="250px">
+            <tr>
+            <td><input type="radio" name="age" id="under_18" value="under_18">
+            <label for="under_18">Under 18</label><br></td>
+            <td><input type="radio" name="age" id="40-60" value="40-60">
+            <label for="40-60">40-60</label><br></td>
+
+            </tr><br>
+            <tr>
+            <td><input type="radio" name="age" id="18-24" value="18-24">
+            <label for="18-24">18-24</label><br></td>
+            <td><input type="radio" name="age" id="60+" value="60+">
+            <label for="60+">60+</label><br></td>
+
+            <tr>
+            <td><input type="radio" name="age" id="25-40" value="25-40">
+            <label for="25-40">25-40</label><br></td>
+            </tr>
+            
+
+        </Table>
+
+
+        <!-- MP= most popular -->
+        <p>6) What would you say is the most popular beverage you sell?</p>
+        <textarea id="mp_beverage" name="mp_beverage" rows="4" cols="50"></textarea>
+
+        <p>7) What would you say is the most popular food you sell?</p>
+        <textarea id="mp_food" name="mp_food" rows="4" cols="50"></textarea>
+    </body>
+</html>
