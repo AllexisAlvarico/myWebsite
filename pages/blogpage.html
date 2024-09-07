@@ -8,11 +8,32 @@
         <a href="eventspage.html" target="_self">Events</a>
         <a href="contactme.html" target="_self">Contact me!</a>
         <link rel="stylesheet" type="text/css" href="../styles/styles.css">
+        <script src="../scripts/scripts.js"></script>
     </nav>
 <head>
 
-
 </head>
 <body>
+
+<button onclick="formOpenBlog()">Open Form</button>
+
+<div class="form-popup" id="myForm" style="display: none;">
+  <form action="/action_page.php">
+    <h1>Create Blog</h1>
+
+    <label for="title"><b>Title</b></label>
+    <input type="text" placeholder="Enter title" name="title">
+
+    <label for="name"><b>Author</b></label>
+    <input type="text" placeholder="Enter Author Name" name="author">
+
+    <label for="name"><b>Blog Text</b></label>
+    <textarea id="blogBodyText" placeholder="Enter bodyText"></textarea>
+
+    <button type="submit" >Submit Blog</button>
+    <button type="button" onclick="formCloseBlog()">Close</button>
+  </form>
+</div>
+
 </body>
 </html>

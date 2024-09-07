@@ -124,5 +124,10 @@ li{
 }
 #games{
     background-color: rgb(30, 130, 127);
-    
 }
+
+.card {
+    background-color: white;
+    padding: 20px;
+    margin-top: 20px;
+  }
