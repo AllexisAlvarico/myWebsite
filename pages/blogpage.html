@@ -10,30 +10,33 @@
         <link rel="stylesheet" type="text/css" href="../styles/styles.css">
         <script src="../scripts/scripts.js"></script>
     </nav>
+
+    <button onclick="formOpenBlog()">create blog</button>
 <head>
 
 </head>
 <body>
 
-<button onclick="formOpenBlog()">Open Form</button>
+    <div id="myForm" style="display: none;">
+        <form id="formId" method="post">
+          <h1>Create Blog</h1>
+          <label for="title"><b>Title</b></label>
+          <input type="text" placeholder="Enter title" name="title" id="titleID">
+          <label for="author"><b>Author</b></label>
+          <input type="text" placeholder="Enter Author Name" name="author" id="authorID">
+          <label for="bodyText"><b>Blog Text</b></label>
+          <textarea id="bodyTextID" placeholder="Enter bodyText" ></textarea>
+          <button type="button" onclick="setBlog();return false">create blog</button>
+          <button type="button" onclick="formCloseBlog()">Close</button>
+        </form>
+      </div>
 
-<div class="form-popup" id="myForm" style="display: none;">
-  <form action="/action_page.php">
-    <h1>Create Blog</h1>
+    <div class="card">
+        <h2>TITLE HEADING</h2>
+        <h5>Title description, Dec 7, 2017</h5>
+        <p>Some text..</p>
+      </div>
 
-    <label for="title"><b>Title</b></label>
-    <input type="text" placeholder="Enter title" name="title">
-
-    <label for="name"><b>Author</b></label>
-    <input type="text" placeholder="Enter Author Name" name="author">
-
-    <label for="name"><b>Blog Text</b></label>
-    <textarea id="blogBodyText" placeholder="Enter bodyText"></textarea>
-
-    <button type="submit" >Submit Blog</button>
-    <button type="button" onclick="formCloseBlog()">Close</button>
-  </form>
-</div>
 
 </body>
 </html>
